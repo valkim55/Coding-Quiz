@@ -19,33 +19,33 @@
     </header>
 
     <!--store the question in the main section of the body-->
-    <main>
+    <main class="questions-content" id="questions-content">
         <!--assign class="questions" for all the question to style them together and manipulate how they appear in JavaScript-->
-       <section class="questions">
-        <h2>Question 1. Commonly used data types do NOT include: </h2>
+       <section class="questions" id="question-1">
+        <h2 class="question-text" id="questiontext">Question 1. Commonly used data types do NOT include: </h2>
         <!--assign the class to each question's answer selection individually to highlight wrong/correct answer in a different color-->
-        <ol class="question1">
-            <li>strings</li>
-            <li>booleans</li>
-            <li>alerts</li> 
-            <li>numbers</li>
+        <ol class="answer-options" id="answer-options">
+            <li id="false-1">strings</li>
+            <li id="false-2">booleans</li>
+            <li id="true">alerts</li> 
+            <li id="false-3">numbers</li>
         </ol>
 
-        <!--place the containers with "correct"/"wrong" at the bottom of the question and give them class name hidden. if the user clicks on the correct/wrong answer the text will become visible-->
-        <div class="correct">
-            <h3>CORRECT &#128512;</h3>
-        </div>
-        <div class="wrong">
-            <h3>WRONG &#128533;</h3>
-        </div>
-
-        <!--wrap the buttons in a div element for styling and to tie the events to them in JavaScript-->
-        <div class="buttons">
-            <button>next</button>
-        </div>
+       
        </section>
 
-       <section class="questions">
+     
+
+
+
+
+
+
+
+
+
+
+       <!--<section class="questions">
         <h2>Question 2. A very useful tool used during development and debugging for printing contene to the debugger is: </h2>
         <ol class="question2">
             <li>JavaScript</li>
@@ -53,13 +53,6 @@
             <li>for loops</li>
             <li>console.log</li>
         </ol>
-
-        <div class="correct">
-            <h3>CORRECT &#128512;</h3>
-        </div>
-        <div class="wrong">
-            <h3>WRONG &#128533;</h3>
-        </div>
 
         <div class="button">
             <button>next</button>
@@ -75,13 +68,6 @@
             <li>parentheses</li>
         </ol>
 
-        <div class="correct">
-            <h3>CORRECT &#128512;</h3>
-        </div>
-        <div class="wrong">
-            <h3>WRONG &#128533;</h3>
-        </div>
-
         <div class="buttons">
             <button>next</button>
         </div>
@@ -96,14 +82,7 @@
             <li>all of the above</li>
         </ol>
 
-        <div class="correct">
-            <h3>CORRECT &#128512;</h3>
-        </div>
-        <div class="wrong">
-            <h3>WRONG &#128533;</h3>
-        </div>
-
-        <div class="buttons">
+        <div class="buttons" data-state="hidden">
             <button>next</button>
         </div>
        </section>
@@ -117,17 +96,10 @@
             <li>square brackets</li>
         </ol>
 
-        <div class="correct">
-            <h3>CORRECT &#128512;</h3>
-        </div>
-        <div class="wrong">
-            <h3>WRONG &#128533;</h3>
-        </div>
-
         <div class="buttons">
             <button>next</button>
         </div>
-       </section>
+       </section>-->
 
     </main>
 
