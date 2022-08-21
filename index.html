@@ -11,19 +11,76 @@
 
 <body>
     
-    <header>
-        <h1>Welcome to Coding Quiz!</h1>
-        <div class="buttons">
-            <button>start</button>
-        </div>
-    </header>
+    
 
     <!--store the question in the main section of the body-->
     <main class="questions-content" id="questions-content">
+        <section class="quiz-container" id="quiz-container">
+            
+            <div class="tracker-container">
+                <div class="score-container">
+                    <h2 class="score-text">Score</h2>
+                    <div class="score-number" id="score-number">0</div>
+                </div>
+            
+                <div class="timer-container">
+                    <h2 class="timer-text">Timer</h2>
+                    <div class="timer" id="timer"></div>
+                </div>
+            </div>
+                
+            <div class="question-container">
+                <h1 id="question">this is the question</h1>
+            </div>
+                
+            <div class="allchoices-container" id="choices">
+                <ol class="choice-list" id="choice-list">   
+                    <li class="choice-container">
+                        <div class="choice-text" data-set="1">option1</div>
+                    </li> 
+                
+                    <li class="choice-container">
+                        <div class="choice-text" data-set="2">option2</div>
+                    </li> 
+
+                    <li class="choice-container">
+                        <div class="choice-text" data-set="3">option3</div>
+                    </li> 
+
+                    <li class="choice-container">
+                        <div class="choice-text" data-set="4">option4</div>
+                    </li> 
+                </ol>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!--assign class="questions" for all the question to style them together and manipulate how they appear in JavaScript-->
-       <section class="questions" id="question-1">
+       <!--<section class="questions" id="question-1">
         <h2 class="question-text" id="questiontext">Question 1. Commonly used data types do NOT include: </h2>
-        <!--assign the class to each question's answer selection individually to highlight wrong/correct answer in a different color-->
+       
         <ol class="answer-options" id="answer-options">
             <li id="false-1">strings</li>
             <li id="false-2">booleans</li>
@@ -31,21 +88,15 @@
             <li id="false-3">numbers</li>
         </ol>
 
-       
+        <div class="buttons">
+            <button>next</button>
+        </div>
+       </section>
+
        </section>
 
      
-
-
-
-
-
-
-
-
-
-
-       <!--<section class="questions">
+        <section class="questions">
         <h2>Question 2. A very useful tool used during development and debugging for printing contene to the debugger is: </h2>
         <ol class="question2">
             <li>JavaScript</li>
