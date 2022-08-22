@@ -10,9 +10,15 @@
 </head>
 
 <body>
+    <header class="header">
+        <h1>Welcome to Coding Quiz!</h1>
+        <div class="button-start">
+            <button><a href="./index.html">start</a></button>
+        </div>
+    </header>
 
     <!--store the question in the main section of the body-->
-    <main class="questions-content" id="questions-content">
+    <main class="questions-content hide" id="questions-content">
         <section class="quiz-container" id="quiz-container">
             
             <div class="tracker-container">
@@ -33,19 +39,13 @@
                 
             <div class="allchoices-container" id="choices">
                 <div class="choice-container">
-                    <p class="choice-text" data-set="1">option1</p>
-                </div> 
+                    <button class="choice-text" id="option1" data-set="1">option1</button>
                 
-                <div class="choice-container">
-                    <p class="choice-text" data-set="2">option2</p>
-                </div> 
-
-                <div class="choice-container">
-                    <p class="choice-text" data-set="3">option3</p>
-                </div> 
-
-                <div class="choice-container">
-                    <p class="choice-text" data-set="4">option4</p>
+                    <button class="choice-text" id="option2" data-set="2">option2</button>
+                
+                    <button class="choice-text" id="option3" data-set="3">option3</button>
+                
+                    <button class="choice-text" id="option4" data-set="4">option4</button>
                 </div> 
             </div>
         </section>

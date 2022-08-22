@@ -76,3 +76,11 @@
 .wrong {
     background: red;
 }
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
