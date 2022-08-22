@@ -47,12 +47,12 @@ var questionsArrayEl = [
         choice2: "variables",
         choice3: "alerts",
         choice4: "booleans",
-        correct: "3" // write the actual answers
+        correct: "3" // 
     },
 
     {
         question: "Question 2. A very useful tool used during development and debugging for printing content to the debugger is: ",
-        choice1: "1. JavaScript",
+        choice1: "JavaScript",
         choice2: "2. DOM",
         choice3: "3. for loop",
         choice4: "4. console.log",
