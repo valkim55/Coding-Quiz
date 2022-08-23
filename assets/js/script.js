@@ -1,7 +1,6 @@
 
 // add variables that will represent HTML elements as objects
 
-
 var scoreCounter = document.querySelector(".score-number");
 var timerCounter = document.querySelector("timer");
 
@@ -23,7 +22,7 @@ console.log(choice);
 var currentQuestionEl = {};
 
 // create a variable that will reflect the score
-var startScore = 25;
+var startScore = 0;
 var scorePoints = 5;
 
 // assign a boolean value to the correct answer
