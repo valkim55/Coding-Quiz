@@ -9,7 +9,7 @@ Should any suggestions be made, I will be more than happy to bring any improveme
 
 
 ### The structure of the application
-<p>The quiz is presented in a question - answer format, where the user is given 10 questions testing their basic Javascript knowledge. <br>
+<p>The quiz is presented in a question - answer format, where the user is given 10 questions testing their basic Javascript knowledge. 
 - <em> all questions and answers were generated using array, each answer choice is a button with an event listener tied to it. </em> 
 
 
