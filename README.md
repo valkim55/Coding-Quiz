@@ -8,9 +8,9 @@ The "brain" that makes it work was created with Javascript. DOM was also applied
 Should any suggestions be made, I will be more than happy to bring any improvements in this code.</p>
 
 
-#### The structure of the application
+### The structure of the application
 <p>The quiz is presented in a question - answer format, where the user is given 10 questions testing their basic Javascript knowledge. <br>
-- <em>all questions and answers were generated using array, each answer choice is a button with an event listener tied to it. </em> 
+- <em> all questions and answers were generated using array, each answer choice is a button with an event listener tied to it. </em> 
 
 
 The user is also given 2min 30secs to complete the quiz, each correct answer grants 5 points and each wrong answer will result in deducting 15secs from total time. 
@@ -31,11 +31,11 @@ Once the quiz is completed or user runs out of time, the user is able to view th
 If the user decides to start over they can do so by refreshing the page.</p>
 
 
-#### Credits
+### Credits
 <em><strong> the data for the questions in this quiz was taken from the provided mock-up and W3Schools Javascript quiz</strong></em> (https://www.w3schools.com/quiztest/quiztest.asp?qtest=JS) 
 
 
-##### The screenshot of deployed application
+#### The screenshot of deployed application
 
 ![quiz-screenshot](./assets/images/quiz-screenshot.JPG)
 
