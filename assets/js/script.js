@@ -1,8 +1,15 @@
 
-// add variables that will represent HTML elements as objects
+// add variables that will represent HTML elements as objects (all variable declarations at the top)
 
-var scoreCounter = document.querySelector(".score-number");
-var timerCounter = document.querySelector("timer");
+var header = document.querySelector(".header");
+
+var buttonStart = document.querySelector(".button-start");
+
+var main = document.querySelector(".questions-content");
+
+// create variable for the choices and make it an array
+var choice = Array.from(document.querySelectorAll(".choice-text"));
+console.log(choice);
 
 var questionEl = document.querySelector("#question");
 var btnEl1 = document.querySelector("#option1");
@@ -10,35 +17,27 @@ var btnEl2 = document.querySelector("#option2");
 var btnEl3 = document.querySelector("#option3");
 var btnEl4 = document.querySelector("#option4");
 
+// create variable to reflect and track the questions 
+var questionCounter = 0;
+
 var choiceListEl = document.querySelector(".choice-container");
-
-// create variable for the choices and make it an array
-var choice = Array.from(document.querySelectorAll(".choice-text"));
-console.log(choice);
-
-// create a variable to represent all questions which is an array object
-//var allQuestions = [];
-//create a variable to represent current question, which is an element of allQuestions array
-var currentQuestionEl = {};
-
-// create a variable that will reflect the score
-var startScore = 0;
-var scorePoints = 5;
 
 // assign a boolean value to the correct answer
 var correctAnswer = true;
 
-// create variable to reflect and track the questions 
-var questionCounter = 0;
+//create a variable to represent current question, which is an element of questionsArrayEl
+var currentQuestionEl = {};
 
-var header = document.querySelector(".header");
+// create variables that will reflect the initial score and timer
+var startScore = 0;
+var scorePoints = 5;
 
-var main = document.querySelector(".questions-content");
+// add variables to corresponding HTML elements
+var scoreCounter = document.querySelector(".score-number");
+var timerCounter = document.querySelector("timer");
 
-var buttonStart = document.querySelector(".button-start");
 
-
-// create a variable that will be used as an array for questions
+// create a variable to store all the questions and coice options in an array
 var questionsArrayEl = [
     {
         question: "Question 1. Commonly used data types do NOT include: ",

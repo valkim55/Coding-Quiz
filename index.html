@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./test.css">
 </head>
 
 <body>
     <header class="header">
         <h1>Welcome to Coding Quiz!</h1>
+        <p>You will be presented with 10 questions and each of them will only have one correct answer. </br> You will have 3 minutes to complete the quiz.</br>
+            Every time you choose a correct answer - 3 points will be added to your score.</br>
+            Every time you answer wrong - no points will be awarded and 20 seconds will be deducted from your time.</br>Ready! Set! Code!</p>
         <div class="button-start">
             <button><a href="./index.html">start</a></button>
         </div>
@@ -20,13 +23,11 @@
     <!--store the question in the main section of the body-->
     <main class="questions-content hide" id="questions-content">
         <section class="quiz-container" id="quiz-container">
-            
             <div class="tracker-container">
                 <div class="score-container">
                     <h2 class="score-text">Score</h2>
                     <div class="score-number" id="score-number">0</div>
                 </div>
-            
                 <div class="timer-container">
                     <h2 class="timer-text">Timer</h2>
                     <div class="timer" id="timer"></div>
@@ -48,15 +49,27 @@
                     <button class="choice-text" id="option4" data-set="4">option4</button>
                 </div> 
             </div>
+            <!--create an empty h4 container to innerHTML the respective message depending on user's answer-->
+            <h4 class="popup" id="popup"></h4>
         </section>
 
+        <form class="results-form hide" id="results-form">
+            <div class="final">
+                <h2>Great job!</h2>
+                <h3 class="final-score-text">Let's save your score! You got: 
+                    <div class="final-score" id="final-score"></div>
+                </h3>
+            </div>
+
+            <div class="form-initials">
+                <input type="text" name="initials" id="text-input" placeholder="Enter Initials" />
+                <button class="btn" id="save-info" type="submit">Save My Score</button>
+            </div>
+        </form>
     </main>
 
+    <footer></footer>
 
-    <footer>
-        
-    </footer>
-
-    <script src="./assets/js/script.js"></script>
+    <script src="./testJS.js"></script>
 </body>
 </html>
