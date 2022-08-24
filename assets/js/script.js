@@ -131,7 +131,6 @@ var questionsArrayEl = [
 ];
 console.log(questionsArrayEl);
 
-
 var maxTime = 151;
 var timer = function() {
     maxTime--;
@@ -144,7 +143,6 @@ var timer = function() {
     }
 };
 
-
 var runTimer; 
 var startQuiz = function() {
     main.classList.replace("hide", "show");
@@ -152,7 +150,6 @@ var startQuiz = function() {
     runTimer = setInterval(timer, 1000);
     goToNextQuestion();
 };
-
 
 var goToNextQuestion = function() {
     if (questionCounter === questionsArrayEl.length) {
@@ -164,7 +161,6 @@ var goToNextQuestion = function() {
     btnEl3.textContent = questionsArrayEl[questionCounter].choice3;
     btnEl4.textContent = questionsArrayEl[questionCounter].choice4;    
 };
-
 
 var userChoice = document.querySelector(".choice-text");
 var getNextQuestion = function(userChoice) {
@@ -189,7 +185,6 @@ var getNextQuestion = function(userChoice) {
     }
 };
 
-
 var endQuiz = function() {
     console.log("all done!");
     console.log("current score " + startScore);
@@ -202,7 +197,7 @@ var endQuiz = function() {
 };
 
 
- // create a function that will run after player submits their initials and we need to display these initials with player's score
+// create a function that will run after player submits their initials and we need to display these initials with player's score
 // this also has to happen when user clicks submit button
 var showPlayerData = function() {
     resultsContainer.remove();
@@ -214,16 +209,18 @@ var showPlayerData = function() {
     
     // now create 2 inner boxes for initials and score
     var showInitials = document.createElement("h3");
-    showInitials.className = "show-initials";
+    //showInitials.className = "show-initials"; - in case i need to change style
     playerDataContainer.appendChild(showInitials);
     showInitials.innerHTML = "Recent Player: " + localStorage.getItem("player initials");
     
     var showScore = document.createElement("h3");
-    showScore.className = "show-score";
+    //showScore.className = "show-score";
     playerDataContainer.appendChild(showScore);
     showScore.innerHTML = "Recent Player's Score: " + localStorage.getItem("player score") + " points";
 };
 
+
+// all event listeners at the bottom
 // save player's initials in localStorage when they click button save
 saveResultsBtn.addEventListener("click", function(event) {
     event.preventDefault();
@@ -232,7 +229,6 @@ saveResultsBtn.addEventListener("click", function(event) {
 });
 
 
-// all event listeners at the bottom
 buttonStart.addEventListener("click", (e) => {
     e.preventDefault();
     header.style.display = "none";
