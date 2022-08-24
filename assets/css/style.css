@@ -1,5 +1,6 @@
 .body {
     background-color: #F7EBD4;
+    font-family: Verdana, Helvetica, sans-serif;
 }
 
 .header {
@@ -173,4 +174,76 @@ header p {
 
 .show {
     display: block;
+}
+
+
+/*media query adjustments*/
+@media screen and (max-width: 980px) {
+    header p {
+        text-align: center;
+        font-size: 24px;
+        padding: 15px;
+        border-radius: 25px;
+    }
+    
+    .question-container {
+        font-size: 26px;
+    }
+
+    .choice-text {
+        width: 60%;
+        font-size: 22px;
+    }
+
+    .storage-container {
+        font-size: 26px;
+    }
+
+    .final {
+        font-size: 26px;
+    }
+
+    .results-form {
+        margin: 20px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        margin: 25px;
+    }
+
+    .question-container {
+        font-size: 18px;
+    }
+
+    .choice-text {
+        width: 70%;
+        padding: 15px;
+        font-size: 22px;
+    }
+
+    .results-form {
+        margin: 20px;
+    }
+
+    .storage-container {
+        margin: 20px;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .header {
+        margin: 20px;
+    }
+
+    .quiz-container {
+        margin: 20px;
+    }
+
+    .choice-text {
+        width: 100%;
+    }
 }
